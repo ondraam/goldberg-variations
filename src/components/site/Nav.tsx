@@ -5,6 +5,7 @@ const links = [
   { href: "#tracklist", label: "Tracklist" },
   { href: "#artists", label: "Artists" },
   { href: "#gallery", label: "Gallery" },
+  { href: "#recording", label: "Credits" },
 ];
 
 export const Nav = () => {
