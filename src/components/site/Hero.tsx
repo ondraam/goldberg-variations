@@ -9,7 +9,7 @@ export const Hero = () => {
           <div className="absolute -inset-6 bg-gradient-gold opacity-20 blur-3xl rounded-full" />
           <img
             src={cover}
-            alt="Album cover: Johann Sebastian Bach – Goldberg Variations performed by Radek Baborák, Dalibor Karvay, Andrei Pushkarev, Petr Valášek"
+            alt="Album cover: Johann Sebastian Bach – Goldberg Variations performed by Radek Baborák, Dalibor Karvay, Andrej Pushkarev, Petr Valášek"
             className="relative w-full max-w-xl mx-auto shadow-elegant"
           />
         </div>
@@ -26,7 +26,7 @@ export const Hero = () => {
             recorded in Prague, October 2025.
           </p>
           <div className="flex flex-wrap gap-3 text-sm font-light text-cream/90 mb-10">
-            {["Radek Baborák", "Dalibor Karvay", "Andrei Pushkarev", "Petr Valášek"].map((n) => (
+            {["Radek Baborák", "Dalibor Karvay", "Andrej Pushkarev", "Petr Valášek"].map((n) => (
               <span key={n} className="px-3 py-1 border border-border/80 rounded-sm">
                 {n}
               </span>
