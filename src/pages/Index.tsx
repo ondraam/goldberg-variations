@@ -4,6 +4,7 @@ import { About } from "@/components/site/About";
 import { Tracklist } from "@/components/site/Tracklist";
 import { Artists } from "@/components/site/Artists";
 import { Gallery } from "@/components/site/Gallery";
+import { RecordingInfo } from "@/components/site/RecordingInfo";
 import { Footer } from "@/components/site/Footer";
 import { useEffect } from "react";
 
@@ -34,6 +35,7 @@ const Index = () => {
         <Tracklist />
         <Artists />
         <Gallery />
+        <RecordingInfo />
       </main>
       <Footer />
     </div>
