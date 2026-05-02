@@ -103,7 +103,9 @@
     @apply text-xs uppercase tracking-[0.3em] text-gold font-medium;
   }
   .hairline {
-    @apply h-px w-12 bg-gold/60;
+    height: 1px;
+    width: 3rem;
+    background-color: hsl(var(--gold) / 0.6);
   }
 }
 
