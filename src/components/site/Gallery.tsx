@@ -10,17 +10,29 @@ import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.jpg";
 import g6 from "@/assets/gallery-6.jpg";
+import rKarvay1 from "@/assets/reportage-karvay-1.jpg";
+import rPushkarev2 from "@/assets/reportage-pushkarev-2.jpg";
+import rQuartet2 from "@/assets/reportage-quartet-2.jpg";
+import rQuartet3 from "@/assets/reportage-quartet-3.jpg";
+import rValasek1 from "@/assets/reportage-valasek-1.jpg";
+import rBaborak3 from "@/assets/reportage-baborak-3.jpg";
 
 type Shot = { src: string; alt: string; caption?: string };
 
 const promo: Shot[] = [
   { src: promoBaborak, alt: "Radek Baborák with French horn", caption: "Radek Baborák · French horn" },
   { src: karvay, alt: "Dalibor Karvay holding violin", caption: "Dalibor Karvay · Violin" },
-  { src: promoPushkarev, alt: "Andrei Pushkarev with marimba mallets", caption: "Andrei Pushkarev · Marimba" },
+  { src: promoPushkarev, alt: "Andrej Pushkarev with marimba mallets", caption: "Andrej Pushkarev · Marimba" },
   { src: promoValasek, alt: "Petr Valášek with bass clarinet", caption: "Petr Valášek · Bass Clarinet" },
 ];
 
-const sessions: Shot[] = [
+const reportage: Shot[] = [
+  { src: rQuartet2, alt: "Quartet portrait during the recording session" },
+  { src: rKarvay1, alt: "Dalibor Karvay playing violin during recording" },
+  { src: rPushkarev2, alt: "Andrej Pushkarev performing on marimba" },
+  { src: rValasek1, alt: "Petr Valášek performing on bass clarinet" },
+  { src: rBaborak3, alt: "Radek Baborák performing French horn" },
+  { src: rQuartet3, alt: "Wide rehearsal scene in Sts. Simon and Jude Church" },
   { src: g1, alt: "The quartet performing inside the baroque church" },
   { src: g2, alt: "Recording session detail" },
   { src: g3, alt: "Musicians reading the score" },
@@ -29,20 +41,29 @@ const sessions: Shot[] = [
   { src: g6, alt: "Wide view of the recording session" },
 ];
 
-const all = [...promo, ...sessions];
+const all = [...promo, ...reportage];
+
+const masonrySpans = [
+  "md:col-span-8 md:row-span-2",
+  "md:col-span-4 md:row-span-2",
+  "md:col-span-4 md:row-span-2",
+  "md:col-span-4 md:row-span-2",
+  "md:col-span-4 md:row-span-2",
+  "md:col-span-8 md:row-span-2",
+  "md:col-span-6 md:row-span-2",
+  "md:col-span-6 md:row-span-2",
+  "md:col-span-4 md:row-span-2",
+  "md:col-span-4 md:row-span-2",
+  "md:col-span-4 md:row-span-2",
+  "md:col-span-12 md:row-span-2",
+];
 
 export const Gallery = () => {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   const close = useCallback(() => setOpenIdx(null), []);
-  const next = useCallback(
-    () => setOpenIdx((i) => (i === null ? i : (i + 1) % all.length)),
-    []
-  );
-  const prev = useCallback(
-    () => setOpenIdx((i) => (i === null ? i : (i - 1 + all.length) % all.length)),
-    []
-  );
+  const next = useCallback(() => setOpenIdx((i) => (i === null ? i : (i + 1) % all.length)), []);
+  const prev = useCallback(() => setOpenIdx((i) => (i === null ? i : (i - 1 + all.length) % all.length)), []);
 
   useEffect(() => {
     if (openIdx === null) return;
@@ -81,44 +102,41 @@ export const Gallery = () => {
   );
 
   return (
-    <section id="gallery" className="py-32 bg-secondary/30 border-t border-border">
+    <section id="gallery" className="py-20 md:py-32 bg-secondary/30 border-t border-border">
       <div className="container-wide">
-        <div className="mb-16">
+        <div className="mb-12 md:mb-16">
           <p className="eyebrow mb-4">Gallery</p>
-          <h2 className="font-display text-4xl md:text-5xl text-cream max-w-2xl leading-tight">
+          <h2 className="font-display text-4xl md:text-5xl text-cream max-w-3xl leading-tight">
             Official promo portraits by <span className="italic text-gold">Václav Jirásek</span>.
           </h2>
           <p className="mt-6 text-muted-foreground font-light max-w-xl">
-            Photographed on location at the Sts. Simon and Jude Church in Prague. Click any image to open the lightbox.
+            Click any image to open the lightbox.
           </p>
         </div>
 
-        {/* Promo grid */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {promo.map((shot, i) => (
             <Tile key={shot.src} shot={shot} idx={i} className="aspect-[3/4]" />
           ))}
         </div>
 
-        {/* Session photos */}
-        <div className="mt-20">
-          <p className="eyebrow mb-6">From the recording sessions</p>
-          <div className="grid grid-cols-12 gap-4 md:gap-6">
-            <Tile shot={sessions[0]} idx={promo.length + 0} className="col-span-12 md:col-span-8 aspect-[4/3]" />
-            <Tile shot={sessions[1]} idx={promo.length + 1} className="col-span-6 md:col-span-4 aspect-[4/5]" />
-            <Tile shot={sessions[2]} idx={promo.length + 2} className="col-span-6 md:col-span-4 aspect-square" />
-            <Tile shot={sessions[3]} idx={promo.length + 3} className="col-span-6 md:col-span-4 aspect-square" />
-            <Tile shot={sessions[4]} idx={promo.length + 4} className="col-span-12 md:col-span-4 aspect-square" />
-            <Tile shot={sessions[5]} idx={promo.length + 5} className="col-span-12 aspect-[21/9]" />
+        <div className="mt-16 md:mt-20">
+          <p className="eyebrow mb-6">Recording sessions · reportage</p>
+          <div className="grid grid-cols-2 md:grid-cols-12 auto-rows-[120px] md:auto-rows-[130px] gap-3 md:gap-6">
+            {reportage.map((shot, i) => (
+              <Tile
+                key={shot.src}
+                shot={shot}
+                idx={promo.length + i}
+                className={`col-span-1 row-span-2 ${masonrySpans[i] ?? "md:col-span-4 md:row-span-2"}`}
+              />
+            ))}
           </div>
         </div>
 
-        <p className="mt-8 text-xs text-muted-foreground tracking-wider">
-          Photographs © Václav Jirásek, 2026
-        </p>
+        <p className="mt-8 text-xs text-muted-foreground tracking-wider">Photographs © Václav Jirásek, 2026</p>
       </div>
 
-      {/* Lightbox */}
       {openIdx !== null && (
         <div
           className="fixed inset-0 z-[100] bg-background/95 backdrop-blur-md flex items-center justify-center animate-fade-in"
@@ -127,38 +145,40 @@ export const Gallery = () => {
           aria-modal="true"
         >
           <button
-            onClick={(e) => { e.stopPropagation(); close(); }}
-            className="absolute top-6 right-6 p-2 text-cream hover:text-gold transition-colors"
+            onClick={(e) => {
+              e.stopPropagation();
+              close();
+            }}
+            className="absolute top-4 md:top-6 right-4 md:right-6 p-2 text-cream hover:text-gold transition-colors"
             aria-label="Close"
           >
             <X className="w-6 h-6" />
           </button>
           <button
-            onClick={(e) => { e.stopPropagation(); prev(); }}
-            className="absolute left-4 md:left-8 p-3 text-cream hover:text-gold transition-colors"
+            onClick={(e) => {
+              e.stopPropagation();
+              prev();
+            }}
+            className="absolute left-1 md:left-8 p-2 md:p-3 text-cream hover:text-gold transition-colors"
             aria-label="Previous"
           >
-            <ChevronLeft className="w-8 h-8" />
+            <ChevronLeft className="w-7 h-7 md:w-8 md:h-8" />
           </button>
           <button
-            onClick={(e) => { e.stopPropagation(); next(); }}
-            className="absolute right-4 md:right-8 p-3 text-cream hover:text-gold transition-colors"
+            onClick={(e) => {
+              e.stopPropagation();
+              next();
+            }}
+            className="absolute right-1 md:right-8 p-2 md:p-3 text-cream hover:text-gold transition-colors"
             aria-label="Next"
           >
-            <ChevronRight className="w-8 h-8" />
+            <ChevronRight className="w-7 h-7 md:w-8 md:h-8" />
           </button>
 
-          <figure
-            className="max-w-[92vw] max-h-[88vh] flex flex-col items-center gap-4"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <img
-              src={all[openIdx].src}
-              alt={all[openIdx].alt}
-              className="max-w-full max-h-[80vh] object-contain shadow-elegant"
-            />
-            <figcaption className="text-center">
-              <p className="text-cream font-light">{all[openIdx].caption || all[openIdx].alt}</p>
+          <figure className="max-w-[92vw] max-h-[88vh] flex flex-col items-center gap-4" onClick={(e) => e.stopPropagation()}>
+            <img src={all[openIdx].src} alt={all[openIdx].alt} className="max-w-full max-h-[80vh] object-contain shadow-elegant" />
+            <figcaption className="text-center px-6">
+              <p className="text-cream font-light text-sm md:text-base">{all[openIdx].caption || all[openIdx].alt}</p>
               <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mt-2">
                 {openIdx + 1} / {all.length} · © Václav Jirásek
               </p>
