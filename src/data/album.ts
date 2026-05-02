@@ -37,25 +37,42 @@ export const artists = [
   {
     name: "Radek Baborák",
     instrument: "French Horn",
-    bio: "Former Principal Horn of the Czech Philharmonic, Munich Philharmonic and Berlin Philharmonic. Internationally renowned soloist, conductor and chamber musician.",
+    bio: "Former Principal Horn of the Czech, Munich and Berlin Philharmonics. Internationally renowned soloist, conductor and chamber musician.",
+    fullBio: [
+      "Radek Baborák is one of the most celebrated French horn players of his generation. Before focusing primarily on his international solo career, conducting and chamber music, he enjoyed an extensive career as Principal Horn with orchestras such as the Czech Philharmonic, the Munich Philharmonic and the Berlin Philharmonic.",
+      "The Goldberg Variations marks his seventh album on Animal Music. Previous recordings include a Piazzolla trilogy with his Orquestrina ensemble, an album of Horn Quintets featuring works by Brahms, Glazunov and Sibelius with his Baborák Ensemble, Mahler's Das Knaben Wunderhorn arranged for the Baborák Ensemble and soloists, and an album of Horn Concertos by Pauer and Glière recorded with the Prague Symphony Orchestra under Tomáš Brauner.",
+      "The Goldberg Variations project was originally conceived by Baborák in 2017 during his tenure as curator of the chamber music series at the Dvořák Prague Festival.",
+    ],
     link: "https://www.baborak.com",
   },
   {
     name: "Dalibor Karvay",
     instrument: "Violin",
     bio: "Slovakian violin virtuoso, First Concertmaster of the Vienna Symphony Orchestra from 2020 to 2025.",
+    fullBio: [
+      "Slovakian violinist Dalibor Karvay is one of Central Europe's most distinguished string soloists. From 2020 to 2025 he served as First Concertmaster of the Vienna Symphony Orchestra, a position he held alongside an active solo and chamber music career across Europe.",
+      "A long-time collaborator of Radek Baborák and member of the Baborák Ensemble, Karvay brings a luminous, deeply singing tone to Bach's score — qualities especially suited to the intimate, conversational character of this new arrangement.",
+    ],
     link: "https://www.daliborkarvay.com",
   },
   {
     name: "Andrei Pushkarev",
     instrument: "Marimba",
     bio: "Latvian-Ukrainian percussionist, member of the Grammy Award-winning chamber orchestra Kremerata Baltica led by Gidon Kremer.",
+    fullBio: [
+      "Latvian-Ukrainian percussionist Andrei Pushkarev is a member of the Grammy Award-winning chamber orchestra Kremerata Baltica, led by Gidon Kremer, with whom he has performed and recorded internationally for more than two decades.",
+      "On this recording the marimba assumes the part originally written by Tomáš Ille for guitar, lending Bach's harmonic architecture a warm, resonant pulse that anchors the ensemble.",
+    ],
     link: "https://www.andreipushkarev.com",
   },
   {
     name: "Petr Valášek",
     instrument: "Bass Clarinet",
     bio: "Czech bass clarinettist and member of the acclaimed clarinet quartet Clarinet Factory.",
+    fullBio: [
+      "Czech bass clarinettist Petr Valášek is a long-standing member of Clarinet Factory, the celebrated clarinet quartet whose work spans contemporary classical, world and crossover repertoire.",
+      "In this arrangement, the bass clarinet replaces the bassoon of the original 2017 version, contributing a darkly expressive low voice that converses with horn, violin and marimba throughout the cycle.",
+    ],
     link: "https://www.clarinet-factory.cz",
   },
 ];
