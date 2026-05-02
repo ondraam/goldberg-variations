@@ -16,6 +16,7 @@ import rQuartet2 from "@/assets/reportage-quartet-2.jpg";
 import rQuartet3 from "@/assets/reportage-quartet-3.jpg";
 import rValasek1 from "@/assets/reportage-valasek-1.jpg";
 import rBaborak3 from "@/assets/reportage-baborak-3.jpg";
+import rBaborak4 from "@/assets/reportage-baborak-4.jpg";
 
 type Shot = { src: string; alt: string; caption?: string };
 
@@ -33,6 +34,7 @@ const reportage: Shot[] = [
   { src: rValasek1, alt: "Petr Valášek performing on bass clarinet" },
   { src: rBaborak3, alt: "Radek Baborák performing French horn" },
   { src: rQuartet3, alt: "Wide rehearsal scene in Sts. Simon and Jude Church" },
+  { src: rBaborak4, alt: "Radek Baborák playing French horn beneath baroque statue and stained glass" },
   { src: g1, alt: "The quartet performing inside the baroque church" },
   { src: g2, alt: "Recording session detail" },
   { src: g3, alt: "Musicians reading the score" },
@@ -56,6 +58,7 @@ const masonrySpans = [
   "md:col-span-4 md:row-span-2",
   "md:col-span-4 md:row-span-2",
   "md:col-span-12 md:row-span-2",
+  "md:col-span-4 md:row-span-3",
 ];
 
 export const Gallery = () => {
