@@ -13,7 +13,7 @@ export const About = () => {
             On Friday <span className="text-cream">24 April 2026</span>, Animal Music releases
             Bach's <em className="text-cream">Goldberg Variations</em> (ANI 146) in a new
             arrangement performed by Radek Baborák (French horn), Dalibor Karvay (violin),
-            Andrei Pushkarev (marimba) and Petr Valášek (bass clarinet).
+            Andrej Pushkarev (marimba) and Petr Valášek (bass clarinet).
           </p>
           <p>
             The project was originally conceived by Radek Baborák during his tenure as curator of

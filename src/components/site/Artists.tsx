@@ -9,7 +9,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 const portraits: Record<string, string> = {
   "Radek Baborák": baborak,
   "Dalibor Karvay": karvay,
-  "Andrei Pushkarev": pushkarev,
+  "Andrej Pushkarev": pushkarev,
   "Petr Valášek": valasek,
 };
 
