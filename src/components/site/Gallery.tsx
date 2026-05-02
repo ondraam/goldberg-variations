@@ -1,6 +1,9 @@
-import quartet from "@/assets/quartet.jpg";
-import s1 from "@/assets/session-1.jpg";
-import s2 from "@/assets/session-2.jpg";
+import g1 from "@/assets/gallery-1.jpg";
+import g2 from "@/assets/gallery-2.jpg";
+import g3 from "@/assets/gallery-3.jpg";
+import g4 from "@/assets/gallery-4.jpg";
+import g5 from "@/assets/gallery-5.jpg";
+import g6 from "@/assets/gallery-6.jpg";
 
 export const Gallery = () => {
   return (
@@ -14,34 +17,33 @@ export const Gallery = () => {
         </div>
 
         <div className="grid grid-cols-12 gap-4 md:gap-6">
-          <figure className="col-span-12 md:col-span-8 relative overflow-hidden group">
-            <img
-              src={quartet}
-              alt="Baborák, Karvay, Pushkarev and Valášek standing before the baroque altar"
-              className="w-full h-full object-cover aspect-[4/3] transition-transform duration-[1.2s] group-hover:scale-[1.03]"
-            />
+          <figure className="col-span-12 md:col-span-8 overflow-hidden group">
+            <img src={g1} alt="The quartet performing inside the baroque church" className="w-full h-full object-cover aspect-[4/3] transition-transform duration-1000 group-hover:scale-[1.03]" />
           </figure>
           <figure className="col-span-6 md:col-span-4 overflow-hidden group">
-            <img
-              src={s1}
-              alt="Recording session detail"
-              className="w-full h-full object-cover aspect-[4/5] transition-transform duration-[1.2s] group-hover:scale-[1.03]"
-            />
+            <img src={g2} alt="Recording session detail" className="w-full h-full object-cover aspect-[4/5] transition-transform duration-1000 group-hover:scale-[1.03]" />
+          </figure>
+
+          <figure className="col-span-6 md:col-span-4 overflow-hidden group">
+            <img src={g3} alt="Musicians reading the score" className="w-full h-full object-cover aspect-square transition-transform duration-1000 group-hover:scale-[1.03]" />
           </figure>
           <figure className="col-span-6 md:col-span-4 overflow-hidden group">
-            <img
-              src={s2}
-              alt="Musicians at the marimba reading the score"
-              className="w-full h-full object-cover aspect-[4/5] transition-transform duration-[1.2s] group-hover:scale-[1.03]"
-            />
+            <img src={g4} alt="Marimba mallets and instrument" className="w-full h-full object-cover aspect-square transition-transform duration-1000 group-hover:scale-[1.03]" />
           </figure>
-          <figure className="col-span-12 md:col-span-8 relative overflow-hidden group bg-background flex items-center justify-center p-12">
-            <blockquote className="font-display text-2xl md:text-3xl italic text-cream max-w-xl text-center leading-snug">
-              "Even after centuries, this music remains an endless source of inspiration and creativity."
-              <footer className="mt-6 text-xs not-italic uppercase tracking-[0.3em] text-gold font-body font-medium">
+          <figure className="col-span-12 md:col-span-4 overflow-hidden group bg-background flex items-center justify-center p-10">
+            <blockquote className="font-display text-xl md:text-2xl italic text-cream text-center leading-snug">
+              "An endless source of inspiration and creativity."
+              <footer className="mt-5 text-[10px] not-italic uppercase tracking-[0.3em] text-gold font-body font-medium">
                 Radek Baborák
               </footer>
             </blockquote>
+          </figure>
+
+          <figure className="col-span-6 md:col-span-5 overflow-hidden group">
+            <img src={g5} alt="French horn detail in candlelight" className="w-full h-full object-cover aspect-[4/3] transition-transform duration-1000 group-hover:scale-[1.03]" />
+          </figure>
+          <figure className="col-span-6 md:col-span-7 overflow-hidden group">
+            <img src={g6} alt="Wide view of the recording session" className="w-full h-full object-cover aspect-[4/3] transition-transform duration-1000 group-hover:scale-[1.03]" />
           </figure>
         </div>
 
