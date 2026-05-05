@@ -1,10 +1,13 @@
+import { useLanguage } from "@/context/LanguageContext";
+
 export const About = () => {
+  const { t } = useLanguage();
   return (
     <section id="about" className="py-32 relative">
       <div className="container-prose">
-        <p className="eyebrow mb-6">About the Project</p>
+        <p className="eyebrow mb-6">{t("about.label")}</p>
         <h2 className="font-display text-4xl md:text-5xl text-cream leading-tight mb-10">
-          A conversation between four friends, gathered around one timeless theme.
+          {t("about.heading")}
         </h2>
         <div className="hairline mb-10" />
 
