@@ -10,34 +10,88 @@ interface LanguageContextType {
 
 const translations: Record<Lang, Record<string, string>> = {
   en: {
+    // NAV
     "nav.about": "About",
     "nav.tracklist": "Tracklist",
     "nav.artists": "Artists",
     "nav.gallery": "Gallery",
     "nav.credits": "Credits",
     "nav.listen": "Listen",
+
+    // HERO
     "hero.label": "Animal Music · ANI 146",
     "hero.sub": "A new arrangement for French horn, violin, marimba and bass clarinet by Tomáš Ille — recorded in Prague, October 2025.",
     "hero.order": "Order CD",
     "hero.youtube": "Listen on YouTube",
+
+    // ABOUT
     "about.label": "About the project",
     "about.heading": "A conversation between four friends, gathered around one timeless theme.",
-    "recording.label": "Recording Sessions · Reportage",
+
+    // TRACKLIST
+    "tracklist.label": "Tracklist",
+    "tracklist.heading": "32 Variations",
+    "tracklist.total": "Total duration",
+
+    // ARTISTS
+    "artists.label": "Artists",
+    "artists.heading": "The Performers",
+
+    // GALLERY
+    "gallery.label": "Recording Sessions · Reportage",
+    "gallery.heading": "Behind the Scenes",
+
+    // CREDITS
+    "credits.label": "Credits",
+    "credits.producer": "Producer",
+    "credits.sound": "Sound Engineer",
+    "credits.design": "Design",
+    "credits.photo": "Photography",
+    "credits.recorded": "Recorded",
+    "credits.recorded.value": "October 2025, Church of St. Simon and Jude, Prague",
+    "credits.label.value": "Animal Music",
   },
   cs: {
+    // NAV
     "nav.about": "O projektu",
     "nav.tracklist": "Seznam skladeb",
     "nav.artists": "Interpreti",
     "nav.gallery": "Galerie",
     "nav.credits": "Kredity",
     "nav.listen": "Poslechnout",
+
+    // HERO
     "hero.label": "Animal Music · ANI 146",
     "hero.sub": "Nová aranžmá pro lesní roh, housle, marimbu a basklarinet — Tomáš Ille. Nahráno v Praze, říjen 2025.",
     "hero.order": "Objednat CD",
     "hero.youtube": "Poslechnout na YouTube",
+
+    // ABOUT
     "about.label": "O projektu",
     "about.heading": "Rozhovor čtyř přátel kolem jednoho nadčasového tématu.",
-    "recording.label": "Nahrávací session · Reportáž",
+
+    // TRACKLIST
+    "tracklist.label": "Seznam skladeb",
+    "tracklist.heading": "32 variací",
+    "tracklist.total": "Celková délka",
+
+    // ARTISTS
+    "artists.label": "Interpreti",
+    "artists.heading": "Účinkující",
+
+    // GALLERY
+    "gallery.label": "Nahrávací session · Reportáž",
+    "gallery.heading": "Za scénou",
+
+    // CREDITS
+    "credits.label": "Kredity",
+    "credits.producer": "Producent",
+    "credits.sound": "Zvukový režisér",
+    "credits.design": "Design",
+    "credits.photo": "Fotografie",
+    "credits.recorded": "Nahráno",
+    "credits.recorded.value": "Říjen 2025, kostel sv. Šimona a Judy, Praha",
+    "credits.label.value": "Animal Music",
   },
 };
 
