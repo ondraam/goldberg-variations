@@ -19,8 +19,8 @@ export const Hero = () => {
         <div className="order-1 lg:order-2 animate-fade-up">
           <p className="eyebrow mb-6">{t("hero.label")}</p>
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-cream">
-            Johann Sebastian <span className="italic text-gold">Bach</span>
-            <span className="block mt-2">Goldberg Variations</span>
+            {t("hero.title.composer")} <span className="italic text-gold">{t("hero.title.surname")}</span>
+            <span className="block mt-2">{t("hero.title.work")}</span>
           </h1>
           <div className="hairline my-8" />
           <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-8">
@@ -52,7 +52,7 @@ export const Hero = () => {
             </a>
           </div>
           <p className="mt-10 text-xs uppercase tracking-[0.3em] text-muted-foreground">
-            International Release · 24 April 2026
+            {t("hero.release")}
           </p>
         </div>
       </div>

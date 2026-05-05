@@ -1,5 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 import promoBaborak from "@/assets/promo-baborak.jpg";
 import karvay from "@/assets/karvay.jpg";
 import promoPushkarev from "@/assets/promo-pushkarev.jpg";
@@ -62,6 +63,7 @@ const masonrySpans = [
 ];
 
 export const Gallery = () => {
+  const { t } = useLanguage();
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   const close = useCallback(() => setOpenIdx(null), []);
@@ -108,12 +110,12 @@ export const Gallery = () => {
     <section id="gallery" className="py-20 md:py-32 bg-secondary/30 border-t border-border">
       <div className="container-wide">
         <div className="mb-12 md:mb-16">
-          <p className="eyebrow mb-4">Gallery</p>
+          <p className="eyebrow mb-4">{t("gallery.label")}</p>
           <h2 className="font-display text-4xl md:text-5xl text-cream max-w-3xl leading-tight">
-            Official promo portraits by <span className="italic text-gold">Václav Jirásek</span>.
+            {t("gallery.heading")}
           </h2>
           <p className="mt-6 text-muted-foreground font-light max-w-xl">
-            Click any image to open the lightbox.
+            {t("gallery.sub")}
           </p>
         </div>
 
@@ -124,7 +126,7 @@ export const Gallery = () => {
         </div>
 
         <div className="mt-16 md:mt-20">
-          <p className="eyebrow mb-6">Recording sessions · reportage</p>
+          <p className="eyebrow mb-6">{t("gallery.reportage")}</p>
           <div className="grid grid-cols-2 md:grid-cols-12 auto-rows-[120px] md:auto-rows-[130px] gap-3 md:gap-6">
             {reportage.map((shot, i) => (
               <Tile
@@ -137,7 +139,7 @@ export const Gallery = () => {
           </div>
         </div>
 
-        <p className="mt-8 text-xs text-muted-foreground tracking-wider">Photographs © Václav Jirásek, 2026</p>
+        <p className="mt-8 text-xs text-muted-foreground tracking-wider">{t("gallery.photo_credit")}</p>
       </div>
 
       {openIdx !== null && (
