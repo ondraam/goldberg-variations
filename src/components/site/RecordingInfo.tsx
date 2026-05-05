@@ -1,5 +1,3 @@
-import { useLanguage } from "@/context/LanguageContext";
-
 const credits = [
   { label: "Location", value: "Church of St. Simon and Jude, Prague" },
   { label: "Recorded", value: "October 2025" },
