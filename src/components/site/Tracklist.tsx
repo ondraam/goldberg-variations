@@ -1,8 +1,6 @@
 import { Play } from "lucide-react";
 import { tracklist } from "@/data/album";
 
-const PLAYLIST_ID = "OLAK5uy_nykMPLZYMeiIvfDuHSnkBY7UBj6wYlSZI";
-
 export const Tracklist = () => {
   return (
     <section id="tracklist" className="py-32 bg-secondary/30 border-y border-border">
@@ -23,7 +21,7 @@ export const Tracklist = () => {
           {tracklist.map((t) => (
             <li key={t.n}>
               <a
-                href={`https://www.youtube.com/playlist?list=${PLAYLIST_ID}&index=${t.n}`}
+                href={t.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-baseline gap-4 py-3 border-b border-border/50 hover:border-gold/60 transition-colors no-underline"
