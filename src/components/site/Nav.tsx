@@ -36,7 +36,7 @@ export const Nav = () => {
           ))}
         </ul>
         <a
-          href="https://animalmusic.cz/album/baborak-karvay-pushkarev-valasek-johann-sebastian-bach-goldberg-variations"
+          href="https://open.spotify.com/album/2S13F6rilYYqlmb9mwla9r?si=xmjU_2cTRcK_yBBwT-X3Bw"
           target="_blank"
           rel="noreferrer"
           className="text-xs uppercase tracking-[0.25em] text-gold hover:text-accent transition-colors"
