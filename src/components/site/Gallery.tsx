@@ -35,12 +35,6 @@ const reportage: Shot[] = [
   { src: rBaborak3, alt: "Radek Baborák performing French horn" },
   { src: rQuartet3, alt: "Wide rehearsal scene in Sts. Simon and Jude Church" },
   { src: rBaborak4, alt: "Radek Baborák playing French horn beneath baroque statue and stained glass" },
-  { src: g1, alt: "The quartet performing inside the baroque church" },
-  { src: g2, alt: "Recording session detail" },
-  { src: g3, alt: "Musicians reading the score" },
-  { src: g4, alt: "Marimba mallets and instrument" },
-  { src: g5, alt: "French horn detail in candlelight" },
-  { src: g6, alt: "Wide view of the recording session" },
 ];
 
 const all = [...promo, ...reportage];
