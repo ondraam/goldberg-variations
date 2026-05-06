@@ -41,25 +41,21 @@ export const Nav = () => {
         </ul>
 
         <div className="flex items-center gap-4">
-          <div className="flex items-center border border-gold/30 rounded-sm overflow-hidden text-[10px] tracking-widest">
+          <div className="flex items-center gap-3 text-xs uppercase tracking-[0.25em]">
             <button
               onClick={() => setLang("cs")}
-              className={`px-3 py-1.5 transition-colors ${
-                lang === "cs"
-                  ? "bg-gold text-primary-foreground font-medium"
-                  : "text-gold/60 hover:text-gold"
+              className={`transition-colors duration-300 ${
+                lang === "cs" ? "text-gold" : "text-gold/40 hover:text-gold"
               }`}
               aria-label="Přepnout do češtiny"
             >
               CS
             </button>
-            <div className="w-px h-4 bg-gold/30" />
+            <span className="w-px h-3 bg-gold/20" aria-hidden="true" />
             <button
               onClick={() => setLang("en")}
-              className={`px-3 py-1.5 transition-colors ${
-                lang === "en"
-                  ? "bg-gold text-primary-foreground font-medium"
-                  : "text-gold/60 hover:text-gold"
+              className={`transition-colors duration-300 ${
+                lang === "en" ? "text-gold" : "text-gold/40 hover:text-gold"
               }`}
               aria-label="Switch to English"
             >
