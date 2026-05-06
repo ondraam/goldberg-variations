@@ -1,8 +1,6 @@
 import cover from "@/assets/album-cover.jpg";
-import { useLanguage } from "@/context/LanguageContext";
 
 export const Hero = () => {
-  const { t } = useLanguage();
   return (
     <section id="top" className="relative min-h-screen flex items-center overflow-hidden pt-24 pb-16">
       <div className="absolute inset-0 bg-gradient-radial pointer-events-none" />
@@ -17,14 +15,15 @@ export const Hero = () => {
         </div>
 
         <div className="order-1 lg:order-2 animate-fade-up">
-          <p className="eyebrow mb-6">{t("hero.label")}</p>
+          <p className="eyebrow mb-6">Animal Music · ANI 146</p>
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-cream">
-            {t("hero.title.composer")} <span className="italic text-gold">{t("hero.title.surname")}</span>
-            <span className="block mt-2">{t("hero.title.work")}</span>
+            Johann Sebastian <span className="italic text-gold">Bach</span>
+            <span className="block mt-2">Goldberg Variations</span>
           </h1>
           <div className="hairline my-8" />
           <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-8">
-            {t("hero.sub")}
+            A new arrangement for French horn, violin, marimba and bass clarinet by Tomáš Ille —
+            recorded in Prague, October 2025.
           </p>
           <div className="flex flex-wrap gap-3 text-sm font-light text-cream/90 mb-10">
             {["Radek Baborák", "Dalibor Karvay", "Andrej Pushkarev", "Petr Valášek"].map((n) => (
@@ -40,7 +39,7 @@ export const Hero = () => {
               rel="noreferrer"
               className="inline-flex items-center justify-center px-8 py-3 bg-gradient-gold text-primary-foreground text-sm uppercase tracking-[0.2em] hover:shadow-gold transition-all duration-500"
             >
-              {t("hero.order")}
+              Order CD
             </a>
             <a
               href="https://youtube.com/playlist?list=OLAK5uy_nykMPLZYMeiIvfDuHSnkBY7UBj6wYlSZI"
@@ -48,11 +47,11 @@ export const Hero = () => {
               rel="noreferrer"
               className="inline-flex items-center justify-center px-8 py-3 border border-gold text-gold text-sm uppercase tracking-[0.2em] hover:bg-gold hover:text-primary-foreground transition-all duration-500"
             >
-              {t("hero.youtube")}
+              Listen on YouTube
             </a>
           </div>
           <p className="mt-10 text-xs uppercase tracking-[0.3em] text-muted-foreground">
-            {t("hero.release")}
+            International Release · 24 April 2026
           </p>
         </div>
       </div>

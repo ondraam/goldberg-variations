@@ -1,4 +1,3 @@
-import { LanguageProvider } from "@/context/LanguageContext";
 import { Nav } from "@/components/site/Nav";
 import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
@@ -28,20 +27,18 @@ const Index = () => {
   }, []);
 
   return (
-    <LanguageProvider>
-      <div className="min-h-screen bg-background">
-        <Nav />
-        <main>
-          <Hero />
-          <About />
-          <Tracklist />
-          <Artists />
-          <Gallery />
-          <RecordingInfo />
-        </main>
-        <Footer />
-      </div>
-    </LanguageProvider>
+    <div className="min-h-screen bg-background">
+      <Nav />
+      <main>
+        <Hero />
+        <About />
+        <Tracklist />
+        <Artists />
+        <Gallery />
+        <RecordingInfo />
+      </main>
+      <Footer />
+    </div>
   );
 };
 
