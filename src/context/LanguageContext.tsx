@@ -271,10 +271,21 @@ const translations: Record<Lang, Record<string, TValue>> = {
   },
 };
 
-const LanguageContext = createContext<LanguageContextType | null>(null);
+const LanguageContext = createContext<(LanguageContextType & { fading: boolean }) | null>(null);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [lang, setLang] = useState<Lang>("en");
+  const [lang, setLangState] = useState<Lang>("en");
+  const [fading, setFading] = useState(false);
+
+  const setLang = (l: Lang) => {
+    if (l === lang) return;
+    setFading(true);
+    window.setTimeout(() => {
+      setLangState(l);
+      window.setTimeout(() => setFading(false), 20);
+    }, 150);
+  };
+
   const t = (key: string) => {
     const v = translations[lang][key];
     if (typeof v === "string") return v;
@@ -288,8 +299,16 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     return [];
   };
   return (
-    <LanguageContext.Provider value={{ lang, setLang, t, tArr }}>
-      {children}
+    <LanguageContext.Provider value={{ lang, setLang, t, tArr, fading }}>
+      <div
+        className="transition-opacity ease-out"
+        style={{
+          opacity: fading ? 0 : 1,
+          transitionDuration: fading ? "150ms" : "200ms",
+        }}
+      >
+        {children}
+      </div>
     </LanguageContext.Provider>
   );
 };
