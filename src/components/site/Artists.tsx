@@ -60,7 +60,7 @@ export const Artists = () => {
       </div>
 
       <Dialog open={openIdx !== null} onOpenChange={(o) => !o && setOpenIdx(null)}>
-        <DialogContent className="max-w-3xl bg-card border-border p-0 overflow-hidden">
+        <DialogContent className="max-w-3xl bg-card border-border p-0 overflow-y-auto max-h-[90vh] md:overflow-hidden">
           {active && (
             <div className="grid md:grid-cols-5 gap-0">
               <div className="md:col-span-2 relative aspect-[3/4] md:aspect-auto bg-secondary">
@@ -70,7 +70,7 @@ export const Artists = () => {
                   className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
-              <div className="md:col-span-3 p-8 md:p-10 max-h-[80vh] overflow-y-auto">
+              <div className="md:col-span-3 p-8 md:p-10 md:max-h-[80vh] md:overflow-y-auto">
                 <DialogHeader className="text-left space-y-3">
                   <p className="eyebrow">{active.instrument}</p>
                   <DialogTitle className="font-display text-3xl md:text-4xl text-cream font-light">
