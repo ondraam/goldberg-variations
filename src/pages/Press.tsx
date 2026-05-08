@@ -72,7 +72,7 @@ const Press = () => {
           <a
             href="https://www.dropbox.com/scl/fi/lcyisa97l3ubxro21tga5/PHOTOS_HighRes_300-DPI.zip?rlkey=44uxjp93vqrxvboyno7nfa0cd&st=ewxu1j2f&dl=1"
             download
-            className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-gold text-primary-foreground text-xs uppercase tracking-[0.25em] hover:shadow-gold transition-all duration-500"
+            className="inline-flex w-full sm:w-auto items-center justify-center gap-3 px-8 py-4 min-h-11 bg-gradient-gold text-primary-foreground text-xs uppercase tracking-[0.25em] hover:shadow-gold transition-all duration-500"
           >
             <Download className="w-4 h-4" />
             Download Press Photo Package
@@ -89,7 +89,7 @@ const Press = () => {
           </h2>
           <ul className="divide-y divide-border border-y border-border">
             {downloads.map((d, i) => (
-              <li key={i} className="flex items-center justify-between gap-4 py-5">
+              <li key={i} className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 py-5">
                 <div className="flex items-center gap-4 min-w-0">
                   <FileText className="w-5 h-5 text-gold shrink-0" />
                   <span className="text-cream font-light truncate">{d.label}</span>
@@ -103,7 +103,7 @@ const Press = () => {
                   href={d.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 border border-gold text-gold text-xs uppercase tracking-[0.25em] hover:bg-gold hover:text-primary-foreground transition-all duration-500 shrink-0"
+                  className="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-5 py-2.5 min-h-11 border border-gold text-gold text-xs uppercase tracking-[0.25em] hover:bg-gold hover:text-primary-foreground transition-all duration-500 shrink-0"
                 >
                   <Download className="w-4 h-4" />
                   PDF
