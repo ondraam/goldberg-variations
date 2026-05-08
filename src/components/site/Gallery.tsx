@@ -34,7 +34,6 @@ const reportage: Shot[] = [
   { src: rValasek1, alt: "Petr Valášek performing on bass clarinet" },
   { src: rBaborak3, alt: "Radek Baborák performing French horn" },
   { src: rQuartet3, alt: "Wide rehearsal scene in Sts. Simon and Jude Church" },
-  { src: rBaborak4, alt: "Radek Baborák playing French horn beneath baroque statue and stained glass" },
 ];
 
 const all = [...promo, ...reportage];
