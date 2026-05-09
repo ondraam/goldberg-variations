@@ -16,7 +16,7 @@ export const Hero = () => {
 
         <div className="order-1 lg:order-2 animate-fade-up">
           <p className="eyebrow mb-6">Animal Music · ANI 146</p>
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-cream">
+          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[8.5rem] leading-[1.05] text-cream">
             Johann Sebastian <span className="italic text-gold">Bach</span>
             <span className="block mt-2">Goldberg Variations</span>
           </h1>
