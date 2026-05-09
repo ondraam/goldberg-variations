@@ -7,7 +7,7 @@ export const Tracklist = () => {
       <div className="container-wide">
         <div className="text-center mb-16">
           <p className="eyebrow mb-4">Tracklist</p>
-          <h2 className="font-display text-4xl md:text-5xl text-cream">
+          <h2 className="font-display text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl text-cream">
             Goldberg Variations <span className="italic text-gold">BWV 988</span>
           </h2>
           <p className="mt-4 text-sm text-muted-foreground tracking-wider">
