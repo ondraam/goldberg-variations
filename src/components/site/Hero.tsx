@@ -10,7 +10,7 @@ export const Hero = () => {
           <img
             src={cover}
             alt="Album cover: Johann Sebastian Bach – Goldberg Variations performed by Radek Baborák, Dalibor Karvay, Andrej Pushkarev, Petr Valášek"
-            className="relative w-full max-w-xl mx-auto shadow-elegant"
+            className="relative w-full max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto shadow-elegant"
           />
         </div>
 
