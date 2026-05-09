@@ -3,7 +3,7 @@ export const About = () => {
     <section id="about" className="py-32 relative">
       <div className="container-prose">
         <p className="eyebrow mb-6">About the Project</p>
-        <h2 className="font-display text-4xl md:text-5xl text-cream leading-tight mb-10">
+        <h2 className="font-display text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl text-cream leading-tight mb-10">
           A conversation between four friends, gathered around one timeless theme.
         </h2>
         <div className="hairline mb-10" />

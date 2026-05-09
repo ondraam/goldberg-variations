@@ -16,7 +16,7 @@ export const RecordingInfo = () => {
         <div className="grid lg:grid-cols-12 gap-16 items-start">
           <div className="lg:col-span-5">
             <p className="eyebrow mb-4">Recording Info</p>
-            <h2 className="font-display text-4xl md:text-5xl text-cream leading-tight mb-8">
+            <h2 className="font-display text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl text-cream leading-tight mb-8">
               Captured under <span className="italic text-gold">baroque vaults</span>, in October 2025.
             </h2>
             <p className="text-muted-foreground font-light leading-relaxed mb-10">
