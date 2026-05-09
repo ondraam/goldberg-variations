@@ -16,7 +16,7 @@ export const Tracklist = () => {
         </div>
 
         <ol
-          className="grid md:grid-cols-2 gap-x-12 max-w-5xl mx-auto md:[grid-auto-flow:column] md:[grid-template-rows:repeat(16,auto)]"
+          className="grid md:grid-cols-2 gap-x-12 max-w-5xl mx-auto xl:max-w-none md:[grid-auto-flow:column] md:[grid-template-rows:repeat(16,auto)]"
         >
           {tracklist.map((t) => (
             <li key={t.n}>

@@ -122,6 +122,6 @@
     @apply max-w-3xl mx-auto px-6;
   }
   .container-wide {
-    @apply max-w-6xl xl:max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 xl:px-10 2xl:px-16;
+    @apply max-w-6xl mx-auto px-6 xl:max-w-none xl:mx-0 xl:px-16;
   }
 }
