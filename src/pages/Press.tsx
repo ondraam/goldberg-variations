@@ -33,7 +33,7 @@ const Press = () => {
         {/* Intro */}
         <section className="container-prose">
           <p className="eyebrow mb-6">Electronic Press Kit</p>
-          <h1 className="font-display text-4xl md:text-5xl text-cream leading-tight mb-10">
+          <h1 className="font-display text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl text-cream leading-tight mb-10">
             Goldberg Variations — a new arrangement.
           </h1>
           <div className="hairline mb-10" />
@@ -49,7 +49,7 @@ const Press = () => {
         {/* Making Of */}
         <section className="container-wide mt-32">
           <p className="eyebrow mb-4">Behind the scenes</p>
-          <h2 className="font-display text-3xl md:text-4xl text-cream leading-tight mb-10">
+          <h2 className="font-display text-3xl md:text-4xl xl:text-5xl text-cream leading-tight mb-10">
             Making Of
           </h2>
           <div className="relative w-full overflow-hidden border border-border" style={{ paddingTop: "56.25%" }}>
@@ -66,7 +66,7 @@ const Press = () => {
         {/* Press Photos */}
         <section className="container-prose mt-32 text-center">
           <p className="eyebrow mb-4">Photo © Václav Jirásek, 2025</p>
-          <h2 className="font-display text-3xl md:text-4xl text-cream leading-tight mb-10">
+          <h2 className="font-display text-3xl md:text-4xl xl:text-5xl text-cream leading-tight mb-10">
             Press Photos
           </h2>
           <a
@@ -84,7 +84,7 @@ const Press = () => {
 
         {/* Downloads */}
         <section className="container-wide mt-32">
-          <h2 className="font-display text-3xl md:text-4xl text-cream leading-tight mb-10">
+          <h2 className="font-display text-3xl md:text-4xl xl:text-5xl text-cream leading-tight mb-10">
             Downloads
           </h2>
           <ul className="divide-y divide-border border-y border-border">
@@ -115,7 +115,7 @@ const Press = () => {
 
         {/* Media Contact */}
         <section className="container-wide mt-32">
-          <h2 className="font-display text-3xl md:text-4xl text-cream leading-tight mb-10">
+          <h2 className="font-display text-3xl md:text-4xl xl:text-5xl text-cream leading-tight mb-10">
             Media Contact
           </h2>
           <div className="grid md:grid-cols-2 gap-8">

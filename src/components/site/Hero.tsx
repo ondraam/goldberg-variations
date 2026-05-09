@@ -4,19 +4,19 @@ export const Hero = () => {
   return (
     <section id="top" className="relative min-h-screen flex items-center overflow-hidden pt-24 pb-16">
       <div className="absolute inset-0 bg-gradient-radial pointer-events-none" />
-      <div className="container-wide relative grid lg:grid-cols-2 gap-16 items-center">
+      <div className="container-wide relative grid lg:grid-cols-2 gap-16 xl:gap-24 items-center">
         <div className="relative animate-fade-in order-2 lg:order-1">
           <div className="absolute -inset-6 bg-gradient-gold opacity-20 blur-3xl rounded-full" />
           <img
             src={cover}
             alt="Album cover: Johann Sebastian Bach – Goldberg Variations performed by Radek Baborák, Dalibor Karvay, Andrej Pushkarev, Petr Valášek"
-            className="relative w-full max-w-xl mx-auto shadow-elegant"
+            className="relative w-full max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto shadow-elegant"
           />
         </div>
 
         <div className="order-1 lg:order-2 animate-fade-up">
           <p className="eyebrow mb-6">Animal Music · ANI 146</p>
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-cream">
+          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[8.5rem] leading-[1.05] text-cream">
             Johann Sebastian <span className="italic text-gold">Bach</span>
             <span className="block mt-2">Goldberg Variations</span>
           </h1>

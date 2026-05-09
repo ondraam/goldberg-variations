@@ -102,7 +102,7 @@ export const Gallery = () => {
       <div className="container-wide">
         <div className="mb-12 md:mb-16">
           <p className="eyebrow mb-4">Gallery</p>
-          <h2 className="font-display text-4xl md:text-5xl text-cream max-w-3xl leading-tight">
+          <h2 className="font-display text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl text-cream max-w-3xl leading-tight">
             Official promo portraits by <span className="italic text-gold">Václav Jirásek</span>.
           </h2>
           <p className="mt-6 text-muted-foreground font-light max-w-xl">

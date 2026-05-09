@@ -22,7 +22,7 @@ export const Artists = () => {
       <div className="container-wide">
         <div className="mb-16 max-w-2xl">
           <p className="eyebrow mb-4">Artists</p>
-          <h2 className="font-display text-4xl md:text-5xl text-cream leading-tight">
+          <h2 className="font-display text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl text-cream leading-tight">
             Four voices, four instruments, one work.
           </h2>
           <p className="mt-6 text-muted-foreground font-light">
