@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <section id="top" className="relative min-h-screen flex items-center overflow-hidden pt-24 pb-16">
       <div className="absolute inset-0 bg-gradient-radial pointer-events-none" />
-      <div className="container-wide relative grid lg:grid-cols-2 gap-16 items-center">
+      <div className="container-wide relative grid lg:grid-cols-2 gap-16 xl:gap-24 items-center">
         <div className="relative animate-fade-in order-2 lg:order-1">
           <div className="absolute -inset-6 bg-gradient-gold opacity-20 blur-3xl rounded-full" />
           <img
